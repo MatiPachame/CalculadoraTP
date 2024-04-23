@@ -1,0 +1,10 @@
+.completo{
+    width:  100%;
+}
+.row>*{
+        padding: 5px;
+}
+
+.container{
+    border: 5px solid black;
+}

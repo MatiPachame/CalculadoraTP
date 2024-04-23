@@ -1,1 +1,152 @@
-<p>calculadora works!</p>
+<div class="container container-fluid ">
+    <div>
+    <!--    <input type="checkbox" [(ngModel)]="this.mostrarDetalle" text="MOstrar detalle"> -->
+    <!--</div> -->
+    <!-- muestra el  ng-template #soloValor1 si mostrarDetalle es verdadero -->
+    <!-- sino muestra ng-template #soloValor2 -->
+    <!-- El contenido nunca lo mostrará !!! -->
+    <!--<div *ngIf="this.mostrarDetalle then soloValor1;else soloValor2">
+        
+    </div> -->
+    <!-- muestra el contenido si mostrarDetalle es verdadero -->
+    <!-- sino muestra ng-template #soloValor2 -->
+    <!--<div *ngIf="this.mostrarDetalle;else soloValor2">-->
+
+
+    <!-- </ng-template> -->
+
+    
+
+    <div class="text-center">
+
+        <h1>TP Calculadora</h1>
+
+        <br>
+        
+
+
+        <div class="row">
+            <div class=" col-xs-6 col-sm-6  col-md-3 offset-md-3 ">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="1"
+                                (click)="this.sumadora.concatenar(1)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="2"
+                                (click)="this.sumadora.concatenar(2)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="3"
+                                (click)="this.sumadora.concatenar(3)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="-"
+                                (click)="this.sumadora.realizarOperacion(2)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="4"
+                                (click)="this.sumadora.concatenar(4)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="5"
+                                (click)="this.sumadora.concatenar(5)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="6"
+                                (click)="this.sumadora.concatenar(6)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="+"
+                                (click)="this.sumadora.realizarOperacion(1)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="7"
+                                (click)="this.sumadora.concatenar(7)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="8"
+                                (click)="this.sumadora.concatenar(8)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="9"
+                                (click)="this.sumadora.concatenar(9)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="/"
+                                (click)="this.sumadora.realizarOperacion(3)">
+                        </div>
+                        <div class="col-6">
+                            <input type="button" class="btn completo btn-info" value="0"
+                                (click)="this.sumadora.concatenar(0)">
+                        </div>
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-danger" value="C"
+                                (click)="this.sumadora.limpiar()">
+                        </div>
+
+
+
+                        <div class="col-3">
+                            <input type="button" class="btn completo btn-info" value="*"
+                                (click)="this.sumadora.realizarOperacion(4)">
+                        </div>
+                        <div class="col-12">
+                            <input type="button" class="btn completo btn-success" value="="
+                                (click)="this.sumadora.calcular()">
+                        </div>
+
+
+                        <div class="col-12">
+                            <input class="form-control" type="text" [(ngModel)]="this.sumadora.numero2">
+                        </div>
+                        <div class="col-3">
+                            <select class="form-control" [(ngModel)]="this.sumadora.operacion">
+                                <option value="1">+</option>
+                                <option value="2">-</option>
+                                <option value="3">/</option>
+                                <option value="4">*</option>
+                            </select>
+                        </div>
+            
+                            <br>
+                        <div class="col-12">
+                            <input class="form-control" type="text" [(ngModel)]="this.sumadora.numero1">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="text-center">
+
+                        <p class="text-success">Resultado</p>
+                        <input class="form-control" type="text" [(ngModel)]="this.sumadora.resultado">
+            
+                    </div>
+
+
+                </div>
+                <a><i class="bi bi-8-circle-fill"></i></a>
+            </div>
+        </div>
+
+        
+    </div>
+
+    
+</div>
+
+
+<!--<ng-template #soloValor1>
+    <div>
+        <p> Soy verdadero {{this.sumadora.numero2}} </p>
+    </div>
+</ng-template>
+<ng-template #soloValor2>
+    <div>
+        <p>Soy falso {{this.sumadora.numero2}} </p>
+    </div>
+</ng-template>
+-->
